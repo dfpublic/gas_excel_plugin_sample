@@ -1,0 +1,23 @@
+{
+  "name": "gas_excel_plugin_sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfpublic/gas_excel_plugin_sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfpublic/gas_excel_plugin_sample/issues"
+  },
+  "homepage": "https://github.com/dfpublic/gas_excel_plugin_sample#readme",
+  "dependencies": {
+    "@types/google-apps-script": "0.0.34"
+  }
+}
