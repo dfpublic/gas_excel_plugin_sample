@@ -7,3 +7,6 @@ function include(filename) {
     return HtmlService.createHtmlOutputFromFile(filename)
         .getContent();
 }
+function onOpen() {
+    PLUGIN_ACCOUNTING_initUI();
+}

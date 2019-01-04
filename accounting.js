@@ -1,18 +1,17 @@
-function onOpen() {
+function PLUGIN_ACCOUNTING_initUI(){
   var UI = SpreadsheetApp.getUi();
   // Or DocumentApp or FormApp.
   var AccountingMenu = UI.createMenu('Accounting');
   AccountingMenu
-    .addItem('Reports', 'showReportsSidebar')
+    .addItem('Reports', 'PLUGIN_ACCOUNTING_showReportsSidebar')
     .addSeparator()
-    .addItem('Install', 'install')
+    .addItem('Install', 'PLUGIN_ACCOUNTING_install')
     .addSeparator()
     .addSubMenu(UI.createMenu('Sub-menu')
-      .addItem('Settings', 'showSettings'))
+      .addItem('Settings', 'PLUGIN_ACCOUNTING_showSettings'))
     .addToUi();
 }
-
-function showReportsSidebar() {
+function PLUGIN_ACCOUNTING_showReportsSidebar() {
   var html = HtmlService.createTemplateFromFile('sheets/sidebar.html')
     .evaluate()
     .setTitle('Reports')
@@ -21,12 +20,12 @@ function showReportsSidebar() {
     .showSidebar(html);
 }
 
-function showSettings() {
+function PLUGIN_ACCOUNTING_showSettings() {
   var UI = SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
   UI.alert('You clicked the second menu item!');
 }
 
-function install() {
+function PLUGIN_ACCOUNTING_install() {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   var UI = SpreadsheetApp.getUi();
   var system_sheet = spreadsheet.getSheetByName('system');
