@@ -12,7 +12,7 @@ function PLUGIN_ACCOUNTING_initUI(){
     .addToUi();
 }
 function PLUGIN_ACCOUNTING_showReportsSidebar() {
-  var html = HtmlService.createTemplateFromFile('sheets/sidebar.html')
+  var html = HtmlService.createTemplateFromFile('plugins/accounting/sidebar.html')
     .evaluate()
     .setTitle('Reports')
     .setWidth(300);
